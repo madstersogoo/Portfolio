@@ -1,4 +1,4 @@
-baseURL = "https://www.madstersogood.com/portfolio"
+baseURL = "https://madstersogood.com/Portfolio/"
 languageCode = "en-us"
 theme = "aafu"
 publishDir = "docs"
