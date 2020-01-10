@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <link>https://www.madstersogood.com/portfolio/</link>
+    <link>https://madstersogood.com/Portfolio/</link>
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://www.madstersogood.com/portfolio/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://madstersogood.com/Portfolio/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
