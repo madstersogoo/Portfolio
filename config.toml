@@ -1,0 +1,121 @@
+baseURL = "https://www.madstersogood.com/portfolio"
+languageCode = "en-us"
+theme = "aafu"
+publishDir = "docs"
+
+[params]
+    title = "Portfolio"
+    author = "Matthis Larreur"
+    description = "Matthis Larreur Portfolio"
+    copyright = "Matthis Larreur"
+
+    [params.theme]
+        allowToggle = true
+        # Available themes are 'light', 'dark', and 'pinkish'
+        mainTheme = "dark"
+        altTheme = "light"
+        # setting false below will hide 'aafu by darshan' displayed under the profile pic
+        showAttribute = true
+
+    [params.favicons]
+        use = true
+        metas = '''
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#252627">
+        <link rel="shortcut icon" href="favicon.ico">
+        '''
+
+    # Profile section
+    [params.profile]
+        name = "Matthis Larreur, ML."
+		location = "Marseille"
+
+    # Section for links to social websites
+    [params.social]
+        title = "Links"
+
+        [[params.social.list]]
+            class = "fab"
+            icon = "fa-linkedin-in"
+            url = "https://www.linkedin.com/in/matthis-larreur-916695199/"
+            title = "LinkedIn"		
+        [[params.social.list]]
+            class = "fab"
+            icon = "fa-github"
+            url = "https://github.com/madstersogoo"
+            title = "GitHub"
+    #Specify what is showin in the Accordion
+    [[params.showInAccordion]]
+        item = "aboutme"
+        expand = true   # true for the section that is initially expanded
+    [[params.showInAccordion]]
+        item = "experience"
+    [[params.showInAccordion]]
+        item = "education"
+    [[params.showInAccordion]]
+        item = "project"
+    [[params.showInAccordion]]
+        item = "skill"
+
+    [params.aboutme]
+        title = "A Propos de moi."
+        icon = "fas fa-user"
+        description = "Sérieux et rigoureux, je travaille jusqu'a avoir terminé la tâche qui m'est donné, n'aimant pas laisser des travaux à moitié fait. Passionné d'informatique depuis toujours je souhaiterais me diriger vers une carrière dans la sécurité informatique."
+
+    # Experience section
+    [params.experience]
+        title = "Experiences"
+        icon = "fas fa-briefcase"
+        [[params.experience.list]]
+            position = "Vendeur"
+            dates = "2017 - 2018"
+            company = "Annabella Mallemort"
+	    details = "Expérience en vente dans une boutique de prêt à porter"
+        [[params.experience.list]]
+            position = "Stagiaire "
+            dates = "2015"
+            company = "Mirion Technologies"
+            details = "Stage de troisieme où je me suis occupé du service informatique, du service de vente et participé au pôle production recherche et développement."
+
+    # Education section
+    [params.education]
+        title = "Education"
+        icon = "fas fa-graduation-cap"
+
+        [[params.education.list]]
+            degree = "Bac STI2D mention Bien"
+            college = "Lycée Adam de Craponne"
+            dates = "2015 - 2019"
+        [[params.education.list]]
+            degree = "Brevêt des collèges mention Bien"
+            college = "Collège Colline Durance"
+            dates = "2011 - 2015"
+
+    # Project section
+    [params.project]
+        title = "Projects"
+        icon = "fas fa-project-diagram"
+
+        [[params.project.list]]
+            title = "Civ6_Drafter"
+            url = "https://github.com/madstersogoo/Civ6_Drafter"
+            description = "Drafter pour la version base game de Civ6"
+
+    # Skill section
+    [params.skill]
+        title = "Skills"
+        panelId = "skill-panel"
+        icon = "fas fa-cogs"
+
+        [[params.skill.list]]
+            skill = "C, LaTeX"
+            skillrating = 90
+        [[params.skill.list]]
+            skill = "Html, Css, Markdown"
+            skillrating = 80
+        [[params.skill.list]]
+            skill = "Java Script, R"
+            skillrating = 50
